@@ -7,6 +7,17 @@
 */
 
 // Start coding here
+const sumAllValues = (matrix) => {
+  let arr = [];
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      console.log(matrix[i][j]);
+      arr.push(matrix[i][j]);
+    }
+  }
+  let result =  arr.reduce((acc, cur) => acc + cur, 0);
+  return result;
+};
 
 const matrix = [
   [11, 25, 18],

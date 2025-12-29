@@ -7,6 +7,20 @@
 */
 
 // Start coding here
+function generatePattern(size) {
+    let result = "";
+    for (let i = 1; i <= size; i++) {
+      let x = "";
+      for (let j = 1; j <= size; j++) {
+        if (i <= j) {
+          x += "* ";
+        } 
+      }
+      result += x + "\n";
+    }
+  
+    return result;
+  }
 
 console.log(generatePattern(3)); 
 
@@ -19,7 +33,7 @@ console.log(generatePattern(3));
 */ 
 
 
-console.log(generatePattern(5)); 
+// console.log(generatePattern(5)); 
 
 /*
 

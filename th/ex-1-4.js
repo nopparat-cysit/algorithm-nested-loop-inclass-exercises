@@ -8,6 +8,20 @@
 
 // Start coding here
 
+const showStudentsData = (studentsInfo) => {
+  let result = ''
+  for (const i of studentsInfo) {
+    for (const j in i) {
+      result += `${j}: ${i[j]} \n`
+      
+    }
+    result += '------------------- \n' 
+    
+  }
+  
+  return result
+}
+
 const studentsInfo = [
   { name: "Alice", age: 14, classNumber: 8, favoriteSubject: "Math" },
   { name: "Charlie", age: 15, classNumber: 9, favoriteSubject: "History" },
